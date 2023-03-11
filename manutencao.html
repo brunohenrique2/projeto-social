@@ -18,12 +18,12 @@
         }
         
         html, body {
+            width: 100vw;
+            height: 100vh;
             text-align: center;
         }
 
         body {
-            width: 100vw;
-            height: 100vh;
             background-image: url(img/alerta.jpg);
             background-position: center;
             background-repeat: no-repeat;
@@ -45,11 +45,21 @@
             background-color: black;
             text-align: bottom;
         }
-
+        
         a img {
             width: 50px;
+            border-radius: 50%;
             position: relative;
-            top: 480px;
+            top: 470px;
+            box-sizing: border-box;
+        }
+
+        a img:hover {
+            border: 1px solid white;
+        }
+        
+        a img:active {
+            box-shadow: 1px 1px 10px white;
         }
     </style>
 </head>
